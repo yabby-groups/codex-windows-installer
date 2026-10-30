@@ -14,8 +14,11 @@
 下载 `Install-Codex-Windows-v2.ps1`，在脚本所在目录打开 PowerShell，运行：
 
 ```powershell
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Install-Codex-Windows-v2.ps1
 ```
+
+执行策略设置为当前用户的 `RemoteSigned`；出现确认提示时按 `Y` 确认。安装脚本也会执行此设置。
 
 按提示填写配置：
 

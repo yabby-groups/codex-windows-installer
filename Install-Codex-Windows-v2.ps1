@@ -5,6 +5,8 @@
 
 $ErrorActionPreference = "Stop"
 
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+
 function Write-Step {
     param([string]$Message)
     Write-Host ""
